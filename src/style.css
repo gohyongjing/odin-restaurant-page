@@ -30,14 +30,20 @@ div#content {
     background-color: lightgray;
 }
 
-.home {
+.home,
+.contact,
+.menu {
+    height: max(100vh, min-content);
+    background-color: darkgray;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     align-items: center;
+    gap: 10px;
 }
 
 .home > h1 {
-    color: grey;
     font-size: 48px;
 }
 
@@ -46,6 +52,33 @@ div#content {
 }
 
 .home > img {
+    height: auto;
+    width: 50vw;
+}
+
+.contact > h1 {
+    font-size: 48px;
+}
+
+.contact > div {
+    font-size: 30px;
+}
+
+.menu > .dish {
+    width: 50vw;
+    border: 2px solid grey;
+    background-color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu > div > img {
     height: auto;
     width: 50vw;
 }
