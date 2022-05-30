@@ -13,16 +13,21 @@ div#content {
     gap: 20px;
 }
 
-.navBar > div {
+.navBar > button {
     height: 30px;
     background-color: darkgray;
+    border: 2px solid black;
     border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
     font-size: 30px;
     flex: 1 1 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.navBar > button:hover {
+    background-color: lightgray;
 }
 
 .home {
