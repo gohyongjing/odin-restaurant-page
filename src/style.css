@@ -1,3 +1,46 @@
-h1 {
+div#content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.navBar {
+    background-color: grey;
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.navBar > div {
+    height: 30px;
+    background-color: darkgray;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 30px;
+    flex: 1 1 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home > h1 {
     color: grey;
+    font-size: 48px;
+}
+
+.home > .description {
+    font-size: 28px;
+}
+
+.home > img {
+    height: auto;
+    width: 50vw;
 }
